@@ -12,7 +12,11 @@ class Handler implements URLHandler {
         } else if (url.getPath().equals("/increment")) {
             num += 1;
             return String.format("Number incremented!");
-        } else {
+        } 
+        // else if(url.getPath().equals("/add-message")){
+        //     re
+        
+        else {
             if (url.getPath().contains("/add")) {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("count")) {
